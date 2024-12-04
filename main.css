@@ -1,0 +1,119 @@
+/* Estilo Global */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.notifications {
+    position: relative;
+}
+
+.notifications .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* Menu Lateral */
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 250px;
+    height: calc(100% - 70px);
+    background: var(--secondary-color);
+    color: white;
+    padding: 20px;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Conteúdo Principal */
+main {
+    margin-left: 250px;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.stats-cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 calc(25% - 15px);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activities ul {
+    list-style: none;
+}
+
+.status.done {
+    color: green;
+}
+
+.status.pending {
+    color: orange;
+}
+
+.status.error {
+    color: red;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: var(--primary-color);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

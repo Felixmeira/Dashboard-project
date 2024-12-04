@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Profissional</title>
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Dashboard</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Estatísticas</a></li>
+                <li><a href="#">Relatórios</a></li>
+            </ul>
+            <div class="notifications">
+                <span class="badge">5</span>
+                <img src="assets/icons/notification-icon.png" alt="Notificações">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Menu Lateral -->
+    <aside class="sidebar">
+        <ul class="menu">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Relatórios</a></li>
+            <li><a href="#">Usuários</a></li>
+            <li><a href="#">Configurações</a></li>
+        </ul>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Cards de Estatísticas -->
+        <section class="stats-cards">
+            <div class="card">
+                <h3>Vendas</h3>
+                <p>R$ 15.000</p>
+            </div>
+            <div class="card">
+                <h3>Novos Usuários</h3>
+                <p>350</p>
+            </div>
+            <div class="card">
+                <h3>Comentários</h3>
+                <p>120</p>
+            </div>
+            <div class="card">
+                <h3>Acessos</h3>
+                <p>5.000</p>
+            </div>
+        </section>
+
+        <!-- Lista de Atividades Recentes -->
+        <section class="recent-activities">
+            <h2>Atividades Recentes</h2>
+            <ul>
+                <li><span class="status done"></span> Tarefa 1 concluída</li>
+                <li><span class="status pending"></span> Tarefa 2 pendente</li>
+                <li><span class="status error"></span> Erro no envio do relatório</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Dashboard Profissional. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
